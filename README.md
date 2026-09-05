@@ -10,6 +10,8 @@ Static site for [Stormpower Generators](https://www.stormpowergenerators.com) �
 - `service-repairs.html` — service & repairs
 - `financing.html` — Synchrony financing
 - `contact.html` — contact / request service
+- `generator-maintenance-*.html` — city landing pages (maintenance)
+- `sitemap.xml` / `robots.txt` — SEO crawl files
 
 ## Deploy
 
