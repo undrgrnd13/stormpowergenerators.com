@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact & Request Service | Stormpower Generators</title>
+  <meta name="description" content="Contact Stormpower Generators for installation, maintenance, service, or free system inspection. Call or submit a service request online.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              500: '#f97316',
+              600: '#ea580c',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+
+  <div class="fixed bottom-0 inset-x-0 z-50 bg-slate-900/95 backdrop-blur border-t border-slate-700 p-3 flex gap-3 md:hidden">
+    <a href="tel:5612252535" class="flex-1 bg-brand-500 hover:bg-brand-600 text-white font-semibold py-3 rounded-xl text-center text-sm">Call 561-225-2535</a>
+    <a href="mailto:jamie@stormpowergenerators.com,paul@stormpowergenerators.com?subject=Service Request" class="flex-1 border border-slate-500 hover:border-brand-500 text-white font-semibold py-3 rounded-xl text-center text-sm">Email Us</a>
+  </div>
+
+  <header class="bg-slate-950/90 backdrop-blur border-b border-slate-800 sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="images/logo.png" alt="Stormpower Generators" class="h-12 md:h-14 w-auto">
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html" class="hover:text-brand-500 transition">Home</a>
+        <a href="installation-start-up.html" class="hover:text-brand-500 transition">Installation</a>
+        <a href="maintenance.html" class="hover:text-brand-500 transition">Maintenance</a>
+        <a href="service-repairs.html" class="hover:text-brand-500 transition">Service</a>
+        <a href="financing.html" class="hover:text-brand-500 transition">Financing</a>
+        <a href="contact.html" class="text-brand-500">Contact</a>
+      </nav>
+      <div class="hidden md:flex items-center gap-3">
+        <a href="tel:5612252535" class="text-sm font-semibold hover:text-brand-500 transition">561-225-2535</a>
+        <a href="mailto:jamie@stormpowergenerators.com,paul@stormpowergenerators.com?subject=Service Request" class="bg-brand-500 hover:bg-brand-600 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition">Request Service</a>
+      </div>
+      <button id="menuBtn" class="md:hidden text-slate-300 hover:text-white">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobileNav" class="hidden md:hidden border-t border-slate-800 bg-slate-950">
+      <div class="px-5 py-4 flex flex-col gap-4 text-sm font-medium">
+        <a href="index.html">Home</a>
+        <a href="installation-start-up.html">Installation</a>
+        <a href="maintenance.html">Maintenance</a>
+        <a href="service-repairs.html">Service</a>
+        <a href="financing.html">Financing</a>
+        <a href="contact.html" class="text-brand-500">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="bg-brand-500 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-2.5 flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-3 text-center text-sm font-semibold">
+      <span class="leading-tight">🔥 Free 10-Year Warranty</span>
+      <span class="hidden sm:inline opacity-80">·</span>
+      <span class="text-xs sm:text-sm opacity-95 leading-tight">Aug 17 – Sept 27 · $1,035 value</span>
+      <a href="#request-form" class="underline hover:no-underline ml-0 sm:ml-2 mt-0.5 sm:mt-0">Get Quote →</a>
+    </div>
+  </div>
+
+  <div class="bg-slate-900 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-5 py-2 flex flex-wrap items-center justify-center gap-x-5 gap-y-1 text-xs text-slate-400">
+      <span class="font-medium text-slate-300">Licensed EC13004084</span>
+      <span class="hidden sm:inline">•</span>
+      <span>Insured</span>
+      <span class="hidden sm:inline">•</span>
+      <span>Local South Florida</span>
+      <span class="hidden sm:inline">•</span>
+      <span>Call or Text 561-225-2535</span>
+    </div>
+  </div>
+
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900"></div>
+    <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 50% 30%, #f97316 0%, transparent 50%);"></div>
+    <div class="relative max-w-7xl mx-auto px-5 py-14 md:py-16 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tight mb-4">Contact Stormpower Generators</h1>
+      <p class="text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed">
+        Request installation, start-up, maintenance, or a free system inspection. We are ready to bring 
+        <span class="text-brand-500 font-semibold">Power When It Matters Most</span>.
+      </p>
+    </div>
+  </section>
+
+  <section class="pb-10">
+    <div class="max-w-3xl mx-auto px-5">
+      <div class="grid sm:grid-cols-2 gap-4">
+        <a href="tel:5612252535" class="bg-brand-500 hover:bg-brand-600 text-white font-semibold py-4 rounded-xl text-center transition shadow-lg shadow-orange-500/20">Call 561-225-2535</a>
+        <a href="mailto:jamie@stormpowergenerators.com,paul@stormpowergenerators.com?subject=Service Request" class="border border-slate-600 hover:border-brand-500 text-white font-semibold py-4 rounded-xl text-center transition">Email Us Directly</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-16" id="request-form">
+    <div class="max-w-xl mx-auto px-5">
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 md:p-8">
+        <h2 class="text-xl font-bold mb-1 text-center">Request Service</h2>
+        <p class="text-sm text-slate-400 text-center mb-6">Fill out the form and we’ll call you soon. Free system inspection available with any maintenance appointment.</p>
+        <form action="https://formspree.io/f/mdarnqwy" method="POST" class="space-y-5">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-sm font-medium mb-1.5 text-slate-300">Full Name *</label>
+              <input type="text" name="name" required class="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-xl focus:outline-none focus:border-brand-500 text-white placeholder-slate-500">
+            </div>
+            <div>
+              <label class="block text-sm font-medium mb-1.5 text-slate-300">Phone Number *</label>
+              <input type="tel" name="phone" required class="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-xl focus:outline-none focus:border-brand-500 text-white placeholder-slate-500">
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1.5 text-slate-300">Email Address</label>
+            <input type="email" name="email" class="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-xl focus:outline-none focus:border-brand-500 text-white placeholder-slate-500">
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1.5 text-slate-300">Preferred Contact Time</label>
+            <select name="preferred_time" class="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-xl focus:outline-none focus:border-brand-500 text-white">
+              <option value="">Select a time...</option>
+              <option value="Morning (8am-12pm)">Morning (8am–12pm)</option>
+              <option value="Afternoon (12pm-5pm)">Afternoon (12pm–5pm)</option>
+              <option value="Evening (after 5pm)">Evening (after 5pm)</option>
+              <option value="Anytime">Anytime</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-3 text-slate-300">Services Interested In *</label>
+            <div class="space-y-2.5 text-sm">
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="checkbox" name="service[]" value="Maintenance Agreement / Free Inspection" class="rounded border-slate-600 text-brand-500 focus:ring-brand-500 bg-slate-950">
+                <span>Maintenance Agreement / Free Inspection</span>
+              </label>
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="checkbox" name="service[]" value="Installation & Start-Up" class="rounded border-slate-600 text-brand-500 focus:ring-brand-500 bg-slate-950">
+                <span>Installation & Start-Up</span>
+              </label>
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="checkbox" name="service[]" value="Service & Repairs" class="rounded border-slate-600 text-brand-500 focus:ring-brand-500 bg-slate-950">
+                <span>Service & Repairs</span>
+              </label>
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="checkbox" name="service[]" value="Storm / Emergency Response" class="rounded border-slate-600 text-brand-500 focus:ring-brand-500 bg-slate-950">
+                <span>Storm / Emergency Response</span>
+              </label>
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="checkbox" name="service[]" value="Other" class="rounded border-slate-600 text-brand-500 focus:ring-brand-500 bg-slate-950">
+                <span>Other</span>
+              </label>
+            </div>
+          </div>
+          <div>
+            <label class="block text-sm font-medium mb-1.5 text-slate-300">Additional Details</label>
+            <textarea name="message" rows="4" class="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-xl focus:outline-none focus:border-brand-500 text-white placeholder-slate-500" placeholder="Property address, generator size (kW), urgency, or any other details..."></textarea>
+          </div>
+          <button type="submit" class="w-full bg-brand-500 hover:bg-brand-600 text-white font-semibold py-4 rounded-xl transition shadow-lg shadow-orange-500/20">Send Request – We’ll Call You Soon</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-16">
+    <div class="max-w-3xl mx-auto px-5">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-8">Common Questions</h2>
+      <div class="space-y-4">
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+          <h3 class="font-semibold mb-1.5">Do you offer a free system inspection?</h3>
+          <p class="text-sm text-slate-400">Yes. A free system inspection is included with any maintenance appointment.</p>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+          <h3 class="font-semibold mb-1.5">Do you service Generac, Kohler, and Briggs generators?</h3>
+          <p class="text-sm text-slate-400">Yes. We work on all three brands.</p>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+          <h3 class="font-semibold mb-1.5">Can you start up or maintain a generator installed by someone else?</h3>
+          <p class="text-sm text-slate-400">Yes. We offer start-up, commissioning, and maintenance for systems installed by others.</p>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+          <h3 class="font-semibold mb-1.5">Do I need a maintenance agreement to get service?</h3>
+          <p class="text-sm text-slate-400">No. We provide service for both agreement and non-agreement customers. Agreement customers receive priority and preferred rates.</p>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-xl p-5">
+          <h3 class="font-semibold mb-1.5">What areas do you serve?</h3>
+          <p class="text-sm text-slate-400">Broward, Palm Beach, Martin, and St. Lucie counties — including Boca Raton, Delray Beach, Boynton Beach, West Palm Beach, Jupiter, Palm Beach Gardens, Wellington, Royal Palm Beach, Loxahatchee, Port St. Lucie, Stuart, and surrounding areas.</p>
+        </div>
+      </div>
+      <div class="text-center mt-8">
+        <p class="text-slate-400 text-sm mb-4">Still have questions?</p>
+        <a href="tel:5612252535" class="inline-block bg-brand-500 hover:bg-brand-600 text-white font-semibold px-7 py-3 rounded-xl transition">Call 561-225-2535</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-16">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="grid md:grid-cols-2 gap-5">
+        <div class="rounded-2xl overflow-hidden aspect-[4/3]">
+          <img src="images/contact-photo-1.jpg" alt="Generac standby generator" class="w-full h-full object-cover">
+        </div>
+        <div class="rounded-2xl overflow-hidden aspect-[4/3]">
+          <img src="images/contact-photo-2.jpg" alt="Generator service work" class="w-full h-full object-cover">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-slate-800 py-10 pb-24 md:pb-10">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="flex flex-col md:flex-row justify-between gap-6 text-sm text-slate-500">
+        <div>
+          <div class="font-medium text-slate-300 mb-1">Stormpower Generators Inc.</div>
+          <div>A division of PTM Electric, Inc.</div>
+          <div class="mt-1">16971 W. Hialeah Dr, Loxahatchee, FL 33470</div>
+        </div>
+        <div class="md:text-right">
+          <div>Licensed Electrical Contractor EC13004084</div>
+          <div><a href="tel:5612252535" class="hover:text-brand-500 transition">561-225-2535</a></div>
+          <div class="mt-1">Call or Text</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const nav = document.getElementById('mobileNav');
+    btn.addEventListener('click', () => { nav.classList.toggle('hidden'); });
+  </script>
+  <script src="//code.tidio.co/gbqmhpzhmxxz1x9sf2unyab3l9ccknht.js" async></script>
+</body>
+</html>

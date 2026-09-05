@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Standby Generator Installation, Maintenance & Repair | Stormpower Generators</title>
+  <meta name="description" content="Licensed electrical contractor providing standby generator installation, start-up, maintenance, and repair throughout Broward, Palm Beach, Martin, and St. Lucie counties. Free system inspection with any maintenance appointment.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              500: '#f97316',
+              600: '#ea580c',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    #sp-warranty-overlay {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.78); z-index: 99999;
+      display: flex; align-items: center; justify-content: center; padding: 16px;
+      opacity: 0; visibility: hidden; transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    #sp-warranty-overlay.show { opacity: 1; visibility: visible; }
+    #sp-warranty-popup {
+      background: linear-gradient(160deg, #0b1426 0%, #111c33 100%);
+      border: 1px solid rgba(249,115,22,0.4); border-radius: 16px; max-width: 440px; width: 100%;
+      padding: 32px 28px 28px; position: relative; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.65);
+      color: #fff; text-align: center; font-family: system-ui, -apple-system, sans-serif;
+    }
+    #sp-warranty-popup .close-btn {
+      position: absolute; top: 14px; right: 16px; background: none; border: none;
+      color: #94a3b8; font-size: 24px; cursor: pointer; line-height: 1; padding: 4px;
+    }
+    #sp-warranty-popup .close-btn:hover { color: #fff; }
+    #sp-warranty-popup .badge {
+      display: inline-block; background: #f97316; color: #fff; font-size: 12px; font-weight: 700;
+      letter-spacing: 0.5px; padding: 5px 12px; border-radius: 999px; margin-bottom: 14px; text-transform: uppercase;
+    }
+    #sp-warranty-popup h2 { margin: 0 0 8px; font-size: 28px; font-weight: 800; line-height: 1.15; color: #fff; }
+    #sp-warranty-popup h2 span { color: #f97316; }
+    #sp-warranty-popup .value { font-size: 15px; color: #cbd5e1; margin-bottom: 6px; }
+    #sp-warranty-popup .dates { font-size: 14px; color: #94a3b8; margin-bottom: 22px; }
+    #sp-warranty-popup .cta-primary {
+      display: block; width: 100%; background: #f97316; color: #fff; font-weight: 700; font-size: 16px;
+      padding: 14px 20px; border: none; border-radius: 10px; cursor: pointer; text-decoration: none; margin-bottom: 10px; transition: background 0.2s;
+    }
+    #sp-warranty-popup .cta-primary:hover { background: #ea580c; }
+    #sp-warranty-popup .cta-secondary {
+      display: block; width: 100%; background: transparent; color: #e2e8f0; font-weight: 600; font-size: 15px;
+      padding: 12px 20px; border: 1px solid #334155; border-radius: 10px; cursor: pointer; text-decoration: none; transition: border-color 0.2s, color 0.2s;
+    }
+    #sp-warranty-popup .cta-secondary:hover { border-color: #f97316; color: #f97316; }
+    #sp-warranty-popup .fine-print { margin-top: 18px; font-size: 11px; color: #64748b; line-height: 1.4; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "Stormpower Generators",
+    "image": "https://stormpowergenerators.com/images/logo.png",
+    "url": "https://stormpowergenerators.com",
+    "telephone": "+1-561-225-2535",
+    "email": "paul@stormpowergenerators.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "16971 W. Hialeah Dr",
+      "addressLocality": "Loxahatchee",
+      "addressRegion": "FL",
+      "postalCode": "33470",
+      "addressCountry": "US"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 26.6845, "longitude": -80.2767 },
+    "areaServed": [
+      { "@type": "AdministrativeArea", "name": "Palm Beach County" },
+      { "@type": "AdministrativeArea", "name": "Broward County" },
+      { "@type": "AdministrativeArea", "name": "Martin County" },
+      { "@type": "AdministrativeArea", "name": "St. Lucie County" }
+    ],
+    "priceRange": "$$",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    "description": "Licensed electrical contractor providing standby generator installation, start-up, maintenance, and repair for residential and light-commercial systems throughout South Florida."
+  }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+
+  <div class="fixed bottom-0 inset-x-0 z-50 bg-slate-900/95 backdrop-blur border-t border-slate-700 p-3 flex gap-3 md:hidden">
+    <a href="tel:5612252535" class="flex-1 bg-brand-500 hover:bg-brand-600 text-white font-semibold py-3 rounded-xl text-center text-sm">Call 561-225-2535</a>
+    <a href="mailto:jamie@stormpowergenerators.com,paul@stormpowergenerators.com?subject=Service Request" class="flex-1 border border-slate-500 hover:border-brand-500 text-white font-semibold py-3 rounded-xl text-center text-sm">Email Us</a>
+  </div>
+
+  <header class="bg-slate-950/90 backdrop-blur border-b border-slate-800 sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="images/logo.png" alt="Stormpower Generators" class="h-12 md:h-14 w-auto">
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html" class="text-brand-500">Home</a>
+        <a href="installation-start-up.html" class="hover:text-brand-500 transition">Installation</a>
+        <a href="maintenance.html" class="hover:text-brand-500 transition">Maintenance</a>
+        <a href="service-repairs.html" class="hover:text-brand-500 transition">Service</a>
+        <a href="financing.html" class="hover:text-brand-500 transition">Financing</a>
+        <a href="contact.html" class="hover:text-brand-500 transition">Contact</a>
+      </nav>
+      <div class="hidden md:flex items-center gap-3">
+        <a href="tel:5612252535" class="text-sm font-semibold hover:text-brand-500 transition">561-225-2535</a>
+        <a href="mailto:jamie@stormpowergenerators.com,paul@stormpowergenerators.com?subject=Service Request" class="bg-brand-500 hover:bg-brand-600 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition">Request Service</a>
+      </div>
+      <button id="menuBtn" class="md:hidden text-slate-300 hover:text-white">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobileNav" class="hidden md:hidden border-t border-slate-800 bg-slate-950">
+      <div class="px-5 py-4 flex flex-col gap-4 text-sm font-medium">
+        <a href="index.html" class="text-brand-500">Home</a>
+        <a href="installation-start-up.html">Installation</a>
+        <a href="maintenance.html">Maintenance</a>
+        <a href="service-repairs.html">Service</a>
+        <a href="financing.html">Financing</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="bg-brand-500 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-2.5 flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-3 text-center text-sm font-semibold">
+      <span class="leading-tight">🔥 Free 10-Year Warranty</span>
+      <span class="hidden sm:inline opacity-80">·</span>
+      <span class="text-xs sm:text-sm opacity-95 leading-tight">Aug 17 – Sept 27 · $1,035 value</span>
+      <a href="contact.html" class="underline hover:no-underline ml-0 sm:ml-2 mt-0.5 sm:mt-0">Get Quote →</a>
+    </div>
+  </div>
+
+  <div class="bg-slate-900 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-5 py-2 flex flex-wrap items-center justify-center gap-x-5 gap-y-1 text-xs text-slate-400">
+      <span class="font-medium text-slate-300">Licensed EC13004084</span>
+      <span class="hidden sm:inline">•</span>
+      <span>Insured</span>
+      <span class="hidden sm:inline">•</span>
+      <span>Local South Florida</span>
+      <span class="hidden sm:inline">•</span>
+      <span>Call or Text 561-225-2535</span>
+    </div>
+  </div>
+
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900"></div>
+    <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 30% 20%, #f97316 0%, transparent 50%);"></div>
+    <div class="relative max-w-7xl mx-auto px-5 py-16 md:py-24">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 bg-slate-800/80 border border-slate-700 text-xs font-medium px-3 py-1.5 rounded-full mb-6">
+            <span class="w-2 h-2 rounded-full bg-brand-500"></span>
+            Licensed Electrical Contractor • EC13004084
+          </div>
+          <h1 class="text-4xl md:text-5xl lg:text-[3.25rem] font-bold leading-tight tracking-tight mb-6">Keep Your Generator Ready When You Need It Most</h1>
+          <p class="text-lg text-slate-300 mb-5 max-w-xl leading-relaxed">Stormpower Generators specializes in professional installation, start-up, and ongoing maintenance for standby generators. We help homeowners protect their investment with clear service plans and priority response.</p>
+          <p class="text-lg text-slate-300 mb-5 max-w-xl leading-relaxed">We service Generac, Kohler, and Briggs & Stratton systems throughout Broward, Palm Beach, Martin, and St. Lucie counties.</p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="maintenance.html" class="bg-brand-500 hover:bg-brand-600 text-white font-semibold px-7 py-3.5 rounded-xl text-center transition shadow-lg shadow-orange-500/20">View Maintenance Plans</a>
+            <a href="tel:5612252535" class="border border-slate-600 hover:border-brand-500 hover:bg-slate-900 text-white font-semibold px-7 py-3.5 rounded-xl text-center transition">Call 561-225-2535</a>
+          </div>
+          <p class="mt-5 text-sm text-slate-400">Licensed • Insured • Local • Priority for Agreement Customers</p>
+        </div>
+        <div class="space-y-5">
+          <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 backdrop-blur">
+            <h3 class="text-lg font-semibold mb-4 text-white">Why Homeowners Choose Stormpower</h3>
+            <ul class="space-y-3 text-slate-300 text-sm">
+              <li class="flex gap-3"><span class="text-brand-500 mt-0.5">✓</span><span>Licensed & Insured Electrical Contractor (EC13004084)</span></li>
+              <li class="flex gap-3"><span class="text-brand-500 mt-0.5">✓</span><span>Clear annual maintenance agreements with priority response</span></li>
+              <li class="flex gap-3"><span class="text-brand-500 mt-0.5">✓</span><span>Free system inspection with any maintenance appointment</span></li>
+              <li class="flex gap-3"><span class="text-brand-500 mt-0.5">✓</span><span>Installation, start-up, diagnostics & repairs</span></li>
+              <li class="flex gap-3"><span class="text-brand-500 mt-0.5">✓</span><span>Serving Broward, Palm Beach, Martin & St. Lucie</span></li>
+              <li class="flex gap-3"><span class="text-brand-500 mt-0.5">✓</span><span>Experienced electricians who handle the full system</span></li>
+            </ul>
+          </div>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center">
+            <div class="bg-slate-900/60 border border-slate-800 rounded-xl py-4 px-2"><div class="text-brand-500 font-bold text-sm md:text-base">Licensed</div><div class="text-xs text-slate-400 mt-1">EC13004084</div></div>
+            <div class="bg-slate-900/60 border border-slate-800 rounded-xl py-4 px-2"><div class="text-brand-500 font-bold text-sm md:text-base">Insured</div><div class="text-xs text-slate-400 mt-1">Fully Covered</div></div>
+            <div class="bg-slate-900/60 border border-slate-800 rounded-xl py-4 px-2"><div class="text-brand-500 font-bold text-sm md:text-base">Multi-Brand</div><div class="text-xs text-slate-400 mt-1">Generac • Kohler • Briggs</div></div>
+            <div class="bg-slate-900/60 border border-slate-800 rounded-xl py-4 px-2"><div class="text-brand-500 font-bold text-sm md:text-base">Storm Ready</div><div class="text-xs text-slate-400 mt-1">Priority Response</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-14 bg-brand-500/10 border-y border-brand-500/20">
+    <div class="max-w-5xl mx-auto px-5 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Already Own a Generator?</h2>
+      <p class="text-slate-300 mb-6 max-w-2xl mx-auto">Most generators fail because they sit neglected between storms. Get a free system inspection when you schedule any maintenance appointment — no obligation to enroll.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="maintenance.html" class="bg-brand-500 hover:bg-brand-600 text-white font-semibold px-8 py-3.5 rounded-xl transition">See Maintenance Plans</a>
+        <a href="contact.html" class="border border-slate-500 hover:border-brand-500 text-white font-semibold px-8 py-3.5 rounded-xl transition">Request Free Inspection</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-20 bg-slate-900/50">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+        <p class="text-slate-400 max-w-2xl mx-auto">From new installation to long-term care, we keep standby generators ready for Florida storm season.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <a href="maintenance.html" class="group bg-slate-900 border border-brand-500/40 hover:border-brand-500 rounded-2xl p-6 transition">
+          <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-500 flex items-center justify-center mb-4 text-lg font-bold">01</div>
+          <h3 class="text-lg font-semibold mb-2 group-hover:text-brand-500 transition">Maintenance Agreements</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">Annual plans with minor + major service. Priority response during storms. Free inspection with any appointment.</p>
+        </a>
+        <a href="installation-start-up.html" class="group bg-slate-900 border border-slate-800 hover:border-brand-500/50 rounded-2xl p-6 transition">
+          <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-500 flex items-center justify-center mb-4 text-lg font-bold">02</div>
+          <h3 class="text-lg font-semibold mb-2 group-hover:text-brand-500 transition">Installation & Start-Up</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">Complete installation and commissioning. Code-compliant work by a licensed electrical contractor.</p>
+        </a>
+        <a href="service-repairs.html" class="group bg-slate-900 border border-slate-800 hover:border-brand-500/50 rounded-2xl p-6 transition">
+          <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-500 flex items-center justify-center mb-4 text-lg font-bold">03</div>
+          <h3 class="text-lg font-semibold mb-2 group-hover:text-brand-500 transition">Service & Repairs</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">Diagnostics, no-start issues, transfer switch problems, and corrective repairs.</p>
+        </a>
+        <a href="financing.html" class="group bg-slate-900 border border-slate-800 hover:border-brand-500/50 rounded-2xl p-6 transition">
+          <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-500 flex items-center justify-center mb-4 text-lg font-bold">04</div>
+          <h3 class="text-lg font-semibold mb-2 group-hover:text-brand-500 transition">Financing</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">Synchrony options including deferred interest and longer-term reduced APR plans.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-5">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">How It Works</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="relative bg-slate-900 border border-slate-800 rounded-2xl p-8 text-center">
+          <div class="w-12 h-12 mx-auto mb-5 rounded-full bg-brand-500 text-white flex items-center justify-center font-bold text-lg">1</div>
+          <h3 class="text-lg font-semibold mb-3">Request Service</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">Call or email us for installation, start-up, maintenance, or repair.</p>
+        </div>
+        <div class="relative bg-slate-900 border border-slate-800 rounded-2xl p-8 text-center">
+          <div class="w-12 h-12 mx-auto mb-5 rounded-full bg-brand-500 text-white flex items-center justify-center font-bold text-lg">2</div>
+          <h3 class="text-lg font-semibold mb-3">We Review Needs</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">We discuss your system and recommend the best next step, including maintenance options.</p>
+        </div>
+        <div class="relative bg-slate-900 border border-slate-800 rounded-2xl p-8 text-center">
+          <div class="w-12 h-12 mx-auto mb-5 rounded-full bg-brand-500 text-white flex items-center justify-center font-bold text-lg">3</div>
+          <h3 class="text-lg font-semibold mb-3">Schedule & Protect</h3>
+          <p class="text-sm text-slate-400 leading-relaxed">We complete the work and help you enroll in ongoing care if desired.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 bg-slate-900/50 border-y border-slate-800">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 text-center">
+          <h3 class="text-xl font-semibold mb-3">Brands We Service</h3>
+          <p class="text-slate-300 text-lg">Generac • Kohler • Briggs & Stratton</p>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 text-center">
+          <h3 class="text-xl font-semibold mb-3">Service Area</h3>
+          <p class="text-slate-300 text-lg">Broward • Palm Beach • Martin • St. Lucie</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+        <div class="rounded-xl overflow-hidden aspect-[4/3]"><img src="images/contact-photo-1.jpg" alt="Generac standby generator installation" class="w-full h-full object-cover"></div>
+        <div class="rounded-xl overflow-hidden aspect-[4/3]"><img src="images/installation-photo-1.jpg" alt="Transfer switch and electrical panel work" class="w-full h-full object-cover"></div>
+        <div class="rounded-xl overflow-hidden aspect-[4/3]"><img src="images/startup-photo-2.jpg" alt="Gas pressure testing during generator start-up" class="w-full h-full object-cover"></div>
+        <div class="rounded-xl overflow-hidden aspect-[4/3]"><img src="images/contact-photo-2.jpg" alt="Generator air filter service" class="w-full h-full object-cover"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-5 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Protect Your Generator?</h2>
+      <p class="text-slate-400 mb-8 max-w-2xl mx-auto">Whether you need a new install, start-up, or a maintenance plan with free inspection, we’re ready to help.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="maintenance.html" class="bg-brand-500 hover:bg-brand-600 text-white font-semibold px-8 py-4 rounded-xl transition shadow-lg shadow-orange-500/20">View Maintenance Plans</a>
+        <a href="tel:5612252535" class="border border-slate-600 hover:border-brand-500 text-white font-semibold px-8 py-4 rounded-xl transition">Call 561-225-2535</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-slate-800 py-10 pb-24 md:pb-10">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="flex flex-col md:flex-row justify-between gap-6 text-sm text-slate-500">
+        <div>
+          <div class="font-medium text-slate-300 mb-1">Stormpower Generators Inc.</div>
+          <div>A division of PTM Electric, Inc.</div>
+          <div class="mt-1">16971 W. Hialeah Dr, Loxahatchee, FL 33470</div>
+        </div>
+        <div class="md:text-right">
+          <div>Licensed Electrical Contractor EC13004084</div>
+          <div><a href="tel:5612252535" class="hover:text-brand-500 transition">561-225-2535</a></div>
+          <div class="mt-1">Call or Text</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="sp-warranty-overlay">
+    <div id="sp-warranty-popup">
+      <button class="close-btn" onclick="closeSpPopup()" aria-label="Close">×</button>
+      <div class="badge">Limited Time Offer</div>
+      <h2>Free <span>10-Year</span><br>Warranty</h2>
+      <div class="value">A $1,035 value with qualifying Generac purchase</div>
+      <div class="dates">Aug 17 – Sept 27, 2026</div>
+      <a href="contact.html" class="cta-primary">Get My Free Quote</a>
+      <a href="tel:5612252535" class="cta-secondary">Call 561-225-2535</a>
+      <div class="fine-print">*Terms & conditions apply. Qualifying air-cooled home standby generators 10kW–28kW. See Generac.com/National or call for details.</div>
+    </div>
+  </div>
+
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const nav = document.getElementById('mobileNav');
+    btn.addEventListener('click', () => { nav.classList.toggle('hidden'); });
+
+    (function() {
+      const DELAY = 4000;
+      const COOKIE_NAME = 'sp_warranty_popup_closed';
+      const COOKIE_DAYS = 3;
+      function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+      }
+      function setCookie(name, value, days) {
+        const date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        document.cookie = `${name}=${value};expires=${date.toUTCString()};path=/`;
+      }
+      window.closeSpPopup = function() {
+        document.getElementById('sp-warranty-overlay').classList.remove('show');
+        setCookie(COOKIE_NAME, '1', COOKIE_DAYS);
+      };
+      document.getElementById('sp-warranty-overlay').addEventListener('click', function(e) {
+        if (e.target === this) closeSpPopup();
+      });
+      if (getCookie(COOKIE_NAME)) return;
+      setTimeout(function() {
+        document.getElementById('sp-warranty-overlay').classList.add('show');
+      }, DELAY);
+    })();
+  </script>
+  <script src="//code.tidio.co/gbqmhpzhmxxz1x9sf2unyab3l9ccknht.js" async></script>
+</body>
+</html>

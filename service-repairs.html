@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Service & Repairs | Stormpower Generators</title>
+  <meta name="description" content="Professional generator diagnostics, repair, corrective service, and storm response for residential and light-commercial standby systems. Licensed electrical contractor.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              500: '#f97316',
+              600: '#ea580c',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased">
+
+  <!-- Sticky Mobile CTA -->
+  <div class="fixed bottom-0 inset-x-0 z-50 bg-slate-900/95 backdrop-blur border-t border-slate-700 p-3 flex gap-3 md:hidden">
+    <a href="tel:5612252535" class="flex-1 bg-brand-500 hover:bg-brand-600 text-white font-semibold py-3 rounded-xl text-center text-sm">Call 561-225-2535</a>
+    <a href="mailto:jamie@stormpowergenerators.com,paul@stormpowergenerators.com?subject=Service Request" class="flex-1 border border-slate-500 hover:border-brand-500 text-white font-semibold py-3 rounded-xl text-center text-sm">Email Us</a>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-slate-950/90 backdrop-blur border-b border-slate-800 sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="images/logo.png" alt="Stormpower Generators" class="h-12 md:h-14 w-auto">
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="index.html" class="hover:text-brand-500 transition">Home</a>
+        <a href="installation-start-up.html" class="hover:text-brand-500 transition">Installation</a>
+        <a href="maintenance.html" class="hover:text-brand-500 transition">Maintenance</a>
+        <a href="service-repairs.html" class="text-brand-500">Service</a>
+        <a href="financing.html" class="hover:text-brand-500 transition">Financing</a>
+        <a href="contact.html" class="hover:text-brand-500 transition">Contact</a>
+      </nav>
+      <div class="hidden md:flex items-center gap-3">
+        <a href="tel:5612252535" class="text-sm font-semibold hover:text-brand-500 transition">561-225-2535</a>
+        <a href="mailto:jamie@stormpowergenerators.com,paul@stormpowergenerators.com?subject=Service Request" class="bg-brand-500 hover:bg-brand-600 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition">Request Service</a>
+      </div>
+      <button id="menuBtn" class="md:hidden text-slate-300 hover:text-white">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobileNav" class="hidden md:hidden border-t border-slate-800 bg-slate-950">
+      <div class="px-5 py-4 flex flex-col gap-4 text-sm font-medium">
+        <a href="index.html">Home</a>
+        <a href="installation-start-up.html">Installation</a>
+        <a href="maintenance.html">Maintenance</a>
+        <a href="service-repairs.html" class="text-brand-500">Service</a>
+        <a href="financing.html">Financing</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900"></div>
+    <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 80% 20%, #f97316 0%, transparent 45%);"></div>
+    <div class="relative max-w-7xl mx-auto px-5 py-16 md:py-20 text-center">
+      <div class="inline-flex items-center gap-2 bg-slate-800/80 border border-slate-700 text-xs font-medium px-3 py-1.5 rounded-full mb-6">
+        <span class="w-2 h-2 rounded-full bg-brand-500"></span>
+        Diagnostics • Repairs • Storm Response
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight tracking-tight mb-5">Service & Repairs</h1>
+      <p class="text-lg text-slate-300 max-w-3xl mx-auto mb-4 leading-relaxed">Professional generator diagnostics, repair, corrective service, and emergency response for residential and light-commercial standby generator systems.</p>
+      <p class="text-slate-400 max-w-2xl mx-auto mb-8">Not sure what’s wrong? Call us — we’ll help figure it out.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="mailto:jamie@stormpowergenerators.com,paul@stormpowergenerators.com?subject=Service Request" class="bg-brand-500 hover:bg-brand-600 text-white font-semibold px-7 py-3.5 rounded-xl transition shadow-lg shadow-orange-500/20">Request Service</a>
+        <a href="tel:5612252535" class="border border-slate-600 hover:border-brand-500 hover:bg-slate-900 text-white font-semibold px-7 py-3.5 rounded-xl transition">Call 561-225-2535</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Service -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 md:p-10">
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 text-center">Professional Generator Service</h2>
+        <div class="grid md:grid-cols-2 gap-8 items-start">
+          <div>
+            <p class="text-slate-300 leading-relaxed mb-4">Stormpower Generators provides expert diagnostic and repair services for standby generator systems. Each service visit is focused on restoring proper operation, reliability, and safety.</p>
+            <p class="text-slate-300 leading-relaxed">If a repair requires additional time or parts, we will review the scope with you before proceeding, allowing you to make an informed decision.</p>
+          </div>
+          <div>
+            <ul class="space-y-3 text-slate-300">
+              <li class="flex gap-3"><span class="text-brand-500 mt-0.5">✓</span> Electrical and mechanical troubleshooting</li>
+              <li class="flex gap-3"><span class="text-brand-500 mt-0.5">✓</span> Generator no-start and shutdown conditions</li>
+              <li class="flex gap-3"><span class="text-brand-500 mt-0.5">✓</span> Battery charging and control system faults</li>
+              <li class="flex gap-3"><span class="text-brand-500 mt-0.5">✓</span> Transfer switch diagnostics</li>
+              <li class="flex gap-3"><span class="text-brand-500 mt-0.5">✓</span> Fuel, cooling, and exhaust-related issues</li>
+              <li class="flex gap-3"><span class="text-brand-500 mt-0.5">✓</span> Operational performance and load concerns</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Options -->
+  <section class="pb-16">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8">
+          <h3 class="text-xl font-bold mb-4">Standard Service Call</h3>
+          <ul class="space-y-3 text-slate-300 text-sm mb-5">
+            <li class="flex gap-2"><span class="text-brand-500">•</span> Includes drive time, diagnostic, and up to one (1) hour on site</li>
+            <li class="flex gap-2"><span class="text-brand-500">•</span> Additional labor billed at reduced rate</li>
+            <li class="flex gap-2"><span class="text-brand-500">•</span> Applies to non-maintenance-agreement customers</li>
+          </ul>
+          <p class="text-sm text-slate-400">Parts and materials are not included in the service call and are billed separately.</p>
+        </div>
+        <div class="bg-slate-900 border border-brand-500/30 rounded-2xl p-8">
+          <div class="inline-block text-xs font-semibold text-brand-500 bg-brand-500/10 px-2.5 py-1 rounded-full mb-4">Preferred</div>
+          <h3 class="text-xl font-bold mb-4">Maintenance Agreement Customers</h3>
+          <ul class="space-y-3 text-slate-300 text-sm mb-5">
+            <li class="flex gap-2"><span class="text-brand-500">•</span> Includes drive time, diagnostic, and up to one (1) hour on site</li>
+            <li class="flex gap-2"><span class="text-brand-500">•</span> Service labor rate for non-included work reduced below standard rate</li>
+            <li class="flex gap-2"><span class="text-brand-500">•</span> Priority over standard service calls during normal and storm conditions</li>
+            <li class="flex gap-2"><span class="text-brand-500">•</span> Preferred pricing on parts and materials not included in the agreement</li>
+          </ul>
+          <p class="text-sm text-slate-400">Parts, materials, and corrective repairs outside the scope of the agreement are billed separately.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Storm / After Hours -->
+  <section class="py-16 bg-slate-900/50 border-y border-slate-800">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-3xl font-bold mb-3">Storm & After-Hours Service Policy</h2>
+        <p class="text-slate-400 max-w-2xl mx-auto">This policy defines priorities and expectations during after-hours service and storm or widespread outage conditions.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-7">
+          <h3 class="text-lg font-bold mb-3">Standard After-Hours Service</h3>
+          <p class="text-sm text-slate-400 mb-4">Applies before 7:00 AM, after 5:00 PM weekdays, and anytime on weekends and holidays.</p>
+          <ul class="space-y-2 text-sm text-slate-300">
+            <li class="flex gap-2"><span class="text-brand-500">•</span> Non-agreement customers: higher after-hours rate (2-hour minimum)</li>
+            <li class="flex gap-2"><span class="text-brand-500">•</span> Maintenance Agreement customers: discounted rate per agreement (2-hour minimum)</li>
+          </ul>
+        </div>
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-7">
+          <h3 class="text-lg font-bold mb-3">Storm & Widespread Outage Conditions</h3>
+          <p class="text-sm text-slate-400 mb-4">Applies during hurricanes, named storms, widespread outages, travel restrictions, or emergency declarations. For safety and access reasons, service availability and response times may be limited or adjusted under these conditions.</p>
+          <ul class="space-y-2 text-sm text-slate-300">
+            <li class="flex gap-2"><span class="text-brand-500">•</span> Non-agreement customers: higher storm rate (2-hour minimum)</li>
+            <li class="flex gap-2"><span class="text-brand-500">•</span> Maintenance Agreement customers: discounted rate per agreement (2-hour minimum)</li>
+            <li class="flex gap-2"><span class="text-brand-500">•</span> Priority given to active maintenance agreement customers</li>
+          </ul>
+        </div>
+      </div>
+      <p class="text-center text-slate-400 text-sm mt-8">Call for current service rates and availability.</p>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="py-16 md:py-20">
+    <div class="max-w-4xl mx-auto px-5 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Request Service or Start a Maintenance Agreement?</h2>
+      <p class="text-slate-400 mb-8 max-w-2xl mx-auto">Contact us to schedule service or enroll in an annual maintenance plan.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="mailto:jamie@stormpowergenerators.com,paul@stormpowergenerators.com?subject=Service Request" class="bg-brand-500 hover:bg-brand-600 text-white font-semibold px-8 py-4 rounded-xl transition shadow-lg shadow-orange-500/20">Request Service</a>
+        <a href="tel:5612252535" class="border border-slate-600 hover:border-brand-500 text-white font-semibold px-8 py-4 rounded-xl transition">Call 561-225-2535</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800 py-10 pb-24 md:pb-10">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="flex flex-col md:flex-row justify-between gap-6 text-sm text-slate-500">
+        <div>
+          <div class="font-medium text-slate-300 mb-1">Stormpower Generators Inc.</div>
+          <div>A division of PTM Electric, Inc.</div>
+          <div class="mt-1">16971 W. Hialeah Dr, Loxahatchee, FL 33470</div>
+        </div>
+        <div class="md:text-right">
+          <div>Licensed Electrical Contractor EC13004084</div>
+          <div><a href="tel:5612252535" class="hover:text-brand-500 transition">561-225-2535</a></div>
+          <div class="mt-1">Call or Text</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const nav = document.getElementById('mobileNav');
+    btn.addEventListener('click', () => { nav.classList.toggle('hidden'); });
+  </script>
+  <script src="//code.tidio.co/gbqmhpzhmxxz1x9sf2unyab3l9ccknht.js" async></script>
+</body>
+</html>
