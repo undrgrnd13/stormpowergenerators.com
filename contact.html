@@ -121,6 +121,10 @@
                 <span>Maintenance Agreement / Free Inspection</span>
               </label>
               <label class="flex items-center gap-3 cursor-pointer">
+                <input type="checkbox" name="service[]" value="Remote Monitoring Add-On" class="rounded border-slate-600 text-brand-500 focus:ring-brand-500 bg-slate-950">
+                <span>Remote Monitoring Add-On</span>
+              </label>
+              <label class="flex items-center gap-3 cursor-pointer">
                 <input type="checkbox" name="service[]" value="Installation & Start-Up" class="rounded border-slate-600 text-brand-500 focus:ring-brand-500 bg-slate-950">
                 <span>Installation & Start-Up</span>
               </label>
@@ -131,6 +135,10 @@
               <label class="flex items-center gap-3 cursor-pointer">
                 <input type="checkbox" name="service[]" value="Storm / Emergency Response" class="rounded border-slate-600 text-brand-500 focus:ring-brand-500 bg-slate-950">
                 <span>Storm / Emergency Response</span>
+              </label>
+              <label class="flex items-center gap-3 cursor-pointer">
+                <input type="checkbox" name="service[]" value="Financing Question" class="rounded border-slate-600 text-brand-500 focus:ring-brand-500 bg-slate-950">
+                <span>Financing Question</span>
               </label>
               <label class="flex items-center gap-3 cursor-pointer">
                 <input type="checkbox" name="service[]" value="Other" class="rounded border-slate-600 text-brand-500 focus:ring-brand-500 bg-slate-950">
@@ -214,6 +222,27 @@
     const btn = document.getElementById('menuBtn');
     const nav = document.getElementById('mobileNav');
     btn.addEventListener('click', () => { nav.classList.toggle('hidden'); });
+  </script>
+  <script>
+    // Preselect a service from ?service=... (e.g. contact.html?service=installation#request)
+    (function () {
+      var map = {
+        maintenance: 'Maintenance Agreement / Free Inspection',
+        inspection: 'Maintenance Agreement / Free Inspection',
+        monitoring: 'Remote Monitoring Add-On',
+        installation: 'Installation & Start-Up',
+        repair: 'Service & Repairs',
+        storm: 'Storm / Emergency Response',
+        financing: 'Financing Question',
+        other: 'Other'
+      };
+      var key = (new URLSearchParams(window.location.search).get('service') || '').toLowerCase();
+      var value = map[key];
+      if (!value) return;
+      document.querySelectorAll('input[name="service[]"]').forEach(function (box) {
+        if (box.value === value) box.checked = true;
+      });
+    })();
   </script>
   <script src="//code.tidio.co/gbqmhpzhmxxz1x9sf2unyab3l9ccknht.js" async></script>
 </body>
