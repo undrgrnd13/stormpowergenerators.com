@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.stormpowergenerators.com/sitemap.xml
+Sitemap: https://stormpowergenerators.com/sitemap.xml
