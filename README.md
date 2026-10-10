@@ -28,3 +28,13 @@ Every page links the compiled CSS with a version query, e.g. `css/styles.css?v=8
 sed -i -E 's#css/styles\.css\?v=[A-Za-z0-9._-]+#css/styles.css?v=NEWVERSION#g' *.html
 grep -L 'css/styles.css?v=NEWVERSION' *.html   # should print nothing
 ```
+
+## Analytics (GoatCounter)
+
+Every page has an inactive GoatCounter snippet just before `</head>`, inside an HTML comment, so it loads nothing until it is switched on. To switch it on, replace `YOURCODE` with the GoatCounter site code (the `YOURCODE` in `YOURCODE.goatcounter.com`) and run this from the repo root:
+
+```sh
+sed -i -e 's/GOATCOUNTER_CODE/YOURCODE/' -e 's/<!--GC //' -e 's/ GC-->//' *.html
+```
+
+Check with `grep -c 'YOURCODE.goatcounter.com' *.html` (each page should print 1), then commit. The `?v=` stylesheet version does not need to change for this.
