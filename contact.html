@@ -147,6 +147,10 @@
             </div>
           </div>
           <div>
+            <label for="promo_code" class="block text-sm font-medium mb-1.5 text-slate-300">Promo code <span class="text-slate-500 font-normal">(optional)</span></label>
+            <input id="promo_code" type="text" name="promo_code" maxlength="20" autocomplete="off" class="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-xl focus:outline-none focus:border-brand-500 text-white placeholder-slate-500 uppercase" placeholder="e.g. SWITCH49">
+          </div>
+          <div>
             <label class="block text-sm font-medium mb-1.5 text-slate-300">Additional Details</label>
             <textarea name="message" rows="4" class="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-xl focus:outline-none focus:border-brand-500 text-white placeholder-slate-500" placeholder="Property address, generator size (kW), urgency, or any other details..."></textarea>
           </div>
@@ -236,7 +240,14 @@
         financing: 'Financing Question',
         other: 'Other'
       };
-      var key = (new URLSearchParams(window.location.search).get('service') || '').toLowerCase();
+      var params = new URLSearchParams(window.location.search);
+      // Promo prefill from ?promo=... ; expired codes are ignored (dates are America/New_York, end = first day NOT valid)
+      var promoEnds = { SWITCH49: '2026-12-16' };
+      var today = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+      var promo = (params.get('promo') || '').toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 20);
+      var promoField = document.querySelector('input[name="promo_code"]');
+      if (promo && promoField && !(promoEnds[promo] && today >= promoEnds[promo])) promoField.value = promo;
+      var key = (params.get('service') || '').toLowerCase();
       var value = map[key];
       if (!value) return;
       document.querySelectorAll('input[name="service[]"]').forEach(function (box) {
