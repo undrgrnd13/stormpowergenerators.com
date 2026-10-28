@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="noindex">
-  <title>Annual Generator Maintenance – Use Code SWITCH49 | Stormpower Generators</title>
-  <meta name="description" content="Annual standby generator maintenance from Stormpower Generators. Use code SWITCH49 to save $49. New service customers only, one per household. Ends Dec 15, 2026.">
+  <title>Annual Generator Maintenance – $49 Off Applied (SWITCH49) | Stormpower Generators</title>
+  <meta name="description" content="Annual standby generator maintenance from Stormpower Generators. Your $49 off with SWITCH49 is already applied. New service customers only, one per household. Ends Dec 15, 2026.">
   <link rel="canonical" href="https://stormpowergenerators.com/maintenance.html">
   <link rel="stylesheet" href="/css/styles.css?v=827550c">
   <!-- GoatCounter analytics (cookieless). INACTIVE until the site code is set; see README "Analytics". -->
@@ -77,15 +77,16 @@
       <p class="text-lg text-slate-300 max-w-3xl mx-auto mb-8 leading-relaxed">Keep your Generac, Kohler, or Briggs standby generator storm-ready with an annual maintenance plan. Free system inspection included with any maintenance appointment.</p>
 
       <div id="offer" data-promo-end="2026-12-16" class="bg-slate-900 border border-brand-500/30 rounded-2xl p-7 md:p-10 mb-8">
-        <p class="text-2xl md:text-3xl font-bold text-white mb-2">Use code <span class="text-brand-500 tracking-wide">SWITCH49</span></p>
-        <p class="text-lg text-slate-100 mb-5">Switch and save $49</p>
+        <p class="text-2xl md:text-3xl font-bold text-white mb-2">Your $49 off is already applied</p>
+        <p class="text-lg text-slate-100 mb-2">Switch and save $49 with <span class="font-bold text-brand-500 tracking-wide">SWITCH49</span></p>
+        <p class="text-sm text-slate-300 mb-5">Request online and the code is filled in for you. Calling or texting? Just tell us code <span class="font-bold text-white">SWITCH49</span>.</p>
         <div class="bg-slate-950/60 rounded-xl p-5 text-left max-w-xl mx-auto mb-6">
           <p class="text-sm text-slate-300 mb-3"><span class="font-semibold text-white">Offer terms:</span></p>
           <ul class="space-y-2 text-sm text-slate-300">
             <li class="flex gap-2"><span class="text-brand-500">•</span> $49 off with code SWITCH49.</li>
             <li class="flex gap-2"><span class="text-brand-500">•</span> New service customers only, one per household.</li>
             <li class="flex gap-2"><span class="text-brand-500">•</span> Ends Dec 15, 2026.</li>
-            <li class="flex gap-2"><span class="text-brand-500">•</span> <span>Use code SWITCH49 on our request form, or when you call or text <a href="tel:5612252535" class="underline hover:text-brand-500 whitespace-nowrap">561-225-2535</a>.</span></li>
+            <li class="flex gap-2"><span class="text-brand-500">•</span> <span>Applied automatically on our request form from this page. Calling or texting <a href="tel:5612252535" class="underline hover:text-brand-500 whitespace-nowrap">561-225-2535</a>? Just tell us code SWITCH49.</span></li>
           </ul>
         </div>
         <div class="flex flex-col sm:flex-row justify-center gap-4">
@@ -155,6 +156,23 @@
     const btn = document.getElementById('menuBtn');
     const nav = document.getElementById('mobileNav');
     btn.addEventListener('click', () => { nav.classList.toggle('hidden'); });
+  </script>
+  <script>
+    // Promo pass-through: ?promo=SWITCH49 (or no promo) -> every contact-form link carries promo=SWITCH49.
+    // Only known, unexpired codes pass through (dates America/New_York; end = first day NOT valid).
+    (function () {
+      var promoEnds = { SWITCH49: '2026-12-16' };
+      var today = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+      var p = (new URLSearchParams(window.location.search).get('promo') || '').toUpperCase().replace(/[^A-Z0-9]/g, '').slice(0, 20);
+      var code = (promoEnds[p] ? p : 'SWITCH49');
+      if (today >= promoEnds[code]) return;
+      document.querySelectorAll('a[href^="/contact.html"]').forEach(function (a) {
+        var u = new URL(a.getAttribute('href'), window.location.origin);
+        u.searchParams.set('promo', code);
+        if (!u.searchParams.get('service')) u.searchParams.set('service', 'maintenance');
+        a.setAttribute('href', u.pathname + u.search + u.hash);
+      });
+    })();
   </script>
   <script src="//code.tidio.co/gbqmhpzhmxxz1x9sf2unyab3l9ccknht.js" async></script>
 </body>
