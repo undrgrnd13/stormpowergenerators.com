@@ -82,27 +82,33 @@
       <div class="text-center mb-6">
         <h2 class="text-2xl md:text-3xl font-bold mb-3">Published Annual Plan Prices by Generator Size (kW)</h2>
         <p class="text-slate-400 max-w-2xl mx-auto">Up-front annual pricing that includes both minor and major service visits.</p>
+        <p data-promo-end="2026-12-16" class="text-white font-semibold max-w-2xl mx-auto mt-4">Your $49 off is already applied to these published prices.</p>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-10">
         <div class="bg-brand-500 rounded-xl p-5 text-center text-white">
           <div class="font-semibold text-sm mb-1">7 kW – 20 kW</div>
-          <div class="text-2xl font-bold">$499</div>
+          <div><del data-promo-strike="2026-12-16" class="text-lg font-semibold" style="text-decoration:line-through;text-decoration-thickness:2px;opacity:.85">$499</del></div>
+          <div data-promo-end="2026-12-16" class="text-3xl font-bold">$450</div>
         </div>
         <div class="bg-brand-500 rounded-xl p-5 text-center text-white">
           <div class="font-semibold text-sm mb-1">22 kW – 26 kW</div>
-          <div class="text-2xl font-bold">$549</div>
+          <div><del data-promo-strike="2026-12-16" class="text-lg font-semibold" style="text-decoration:line-through;text-decoration-thickness:2px;opacity:.85">$549</del></div>
+          <div data-promo-end="2026-12-16" class="text-3xl font-bold">$500</div>
         </div>
         <div class="bg-brand-500 rounded-xl p-5 text-center text-white">
           <div class="font-semibold text-sm mb-1">27 kW – 30 kW</div>
-          <div class="text-2xl font-bold">$649</div>
+          <div><del data-promo-strike="2026-12-16" class="text-lg font-semibold" style="text-decoration:line-through;text-decoration-thickness:2px;opacity:.85">$649</del></div>
+          <div data-promo-end="2026-12-16" class="text-3xl font-bold">$600</div>
         </div>
         <div class="bg-brand-500 rounded-xl p-5 text-center text-white">
           <div class="font-semibold text-sm mb-1">32 kW – 48 kW</div>
-          <div class="text-2xl font-bold">$699</div>
+          <div><del data-promo-strike="2026-12-16" class="text-lg font-semibold" style="text-decoration:line-through;text-decoration-thickness:2px;opacity:.85">$699</del></div>
+          <div data-promo-end="2026-12-16" class="text-3xl font-bold">$650</div>
         </div>
         <div class="bg-brand-500 rounded-xl p-5 text-center text-white col-span-2 md:col-span-1">
           <div class="font-semibold text-sm mb-1">60 kW – 100 kW</div>
-          <div class="text-2xl font-bold">$799</div>
+          <div><del data-promo-strike="2026-12-16" class="text-lg font-semibold" style="text-decoration:line-through;text-decoration-thickness:2px;opacity:.85">$799</del></div>
+          <div data-promo-end="2026-12-16" class="text-3xl font-bold">$750</div>
         </div>
       </div>
       <p class="text-center text-sm text-slate-400">Free system inspection included when you schedule a maintenance appointment.</p>
@@ -122,7 +128,7 @@
       </div>
     </div>
   </section>
-  <script>(function(){var t=new Intl.DateTimeFormat('en-CA',{timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());document.querySelectorAll('[data-promo-end]').forEach(function(el){if(t>=el.getAttribute('data-promo-end'))el.style.display='none';});})();</script>
+  <script>(function(){var t=new Intl.DateTimeFormat('en-CA',{timeZone:'America/New_York',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());document.querySelectorAll('[data-promo-end]').forEach(function(el){if(t>=el.getAttribute('data-promo-end'))el.style.display='none';});document.querySelectorAll('[data-promo-strike]').forEach(function(el){if(t>=el.getAttribute('data-promo-strike')){el.style.textDecoration='none';el.style.opacity='1';el.className='text-2xl font-bold';}});})();</script>
 
   <section id="request" class="pb-16">
     <div class="max-w-4xl mx-auto px-5 text-center">
