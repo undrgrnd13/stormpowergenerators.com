@@ -254,7 +254,7 @@
       var promoNote = document.getElementById('promo_applied');
       if (promo && promoField && promoEnds[promo] && today < promoEnds[promo]) {
         promoField.readOnly = true;
-        promoField.classList.add('border-brand-500');
+        promoField.classList.add('border-brand-500'); promoField.style.borderColor = '#f97316'; // border-brand-500 is not in the compiled CSS
         if (promoNote) { promoNote.textContent = '\u2713 Code ' + promo + ' applied \u2014 $49 off.'; promoNote.classList.remove('hidden'); }
       }
       var key = (params.get('service') || '').toLowerCase();
