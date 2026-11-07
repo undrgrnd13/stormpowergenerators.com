@@ -1,0 +1,10 @@
+/* Loaded only by financing and the three postcard landing pages. */
+@media (max-width: 767px) {
+  [data-mobile-contact-bar] {
+    padding-bottom: calc(0.75rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  [data-mobile-contact-footer] {
+    padding-bottom: calc(6rem + env(safe-area-inset-bottom, 0px));
+  }
+}
